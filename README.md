@@ -1,29 +1,27 @@
-# Projeto de Predição de Evasão de Alunos
+# Projeto Principia 
 
-Este projeto tem como objetivo construir um modelo de Machine Learning para prever a evasão de alunos com base em seu engajamento acadêmico e participação em avaliações do tipo SM. O projeto segue as etapas típicas de um projeto de Machine Learning:
+## Descrição
 
-## Pré-requisitos
+Este projeto é uma análise de ciência de dados realizada em Python utilizando Pandas, Matplotlib e Scikit-Learn. Ele realiza várias operações, incluindo importação de dados, pré-processamento, análise exploratória e modelagem.
 
-Antes de executar o notebook, você precisará:
+## Detalhes do Notebook
 
-1. **Python 3.6 ou superior.**
-2. **As seguintes bibliotecas do Python: pandas, numpy, matplotlib, scikit-learn.** Você pode instalar essas bibliotecas usando pip:
+O notebook realiza as seguintes operações:
 
+1. **Importação das bibliotecas necessárias**: O notebook começa importando todas as bibliotecas necessárias para a análise.
 
+2. **Download de dados**: Em seguida, baixa um arquivo ZIP de um URL especificado e extrai os arquivos contidos.
 
-```pip install pandas numpy matplotlib scikit-learn```
+3. **Carregamento dos dados**: Os dados são carregados em dataframes do Pandas a partir dos arquivos CSV extraídos.
 
+4. **Análise Exploratória de Dados (EDA)**: Estatísticas descritivas e histogramas são gerados para cada coluna no dataframe de alunos.
 
-3. **Os dados do aluno no formato CSV.** Os arquivos devem ser nomeados `alunos_teste.csv`, `acessos_conteudo_teste.csv` e `provas_teste.csv` e colocados no mesmo diretório do notebook.
+5. **Pré-processamento dos dados**: Os valores ausentes são preenchidos com a média e as variáveis categóricas são codificadas usando a função `get_dummies` do Pandas.
 
-## Execução
+## Uso
 
-Para executar o notebook, abra-o em uma instância do Jupyter Notebook e execute as células em ordem.
-
-## Fluxo de Trabalho
-
-1. **Importação das bibliotecas necessárias:** Importamos todas as bibliotecas necessárias para o projeto.
-2. **Carregamento dos dados:** Carregamos os dados brutos dos arquivos CSV.
+Para utilizar este notebook, você precisará ter as bibliotecas Python listadas no notebook instaladas em seu ambiente. Você também precisará ter acesso à internet para baixar o arquivo ZIP contendo os dados.
+os arquivos CSV.
 3. **Análise Exploratória de Dados (EDA):** Realizamos uma análise exploratória dos dados, que pode incluir a criação de histogramas e outros gráficos adequados.
 4. **Pré-processamento dos dados:** Agrupamos os dados por aluno-disciplina e criamos os recursos necessários para o modelo.
 5. **União das tabelas:** Unimos as três tabelas de dados em uma única tabela por aluno-disciplina.
